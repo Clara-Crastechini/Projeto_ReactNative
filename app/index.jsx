@@ -7,6 +7,7 @@ export default function Index() {
   return (
     <>
       {/* 1. Logo + imagem de fundo */}
+      <ScrollView style={styles.containerScroll}>
       <View style={styles.imagem}>
       <ImageBackground source={require('../assets/images/imgFundo.png')} 
       style={styles.imgFundo}>
@@ -18,7 +19,6 @@ export default function Index() {
       </ImageBackground>
       </View>
       {/* 2. Campo de consulta */}
-      <ScrollView style={styles.containerScroll}>
       <View style={styles.container}>
       {/* 2.1 Titulo */}
         <Text style={styles.titulo}>Consulte seu CEP</Text>
@@ -59,11 +59,11 @@ const styles = StyleSheet.create({
     width: '100%',
     minHeight: '100%',
     gap: 40,
+    paddingTop: 50,
   },
   
   containerScroll: {
     flex: 1.5,
-    paddingTop: 50,
     height: '100%',
     paddingBottom: 70
 
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
 
   imagem: {
-    height: '40%'
+    height: '50%'
   }
 
 
