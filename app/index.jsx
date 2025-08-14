@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       {/* 1. Logo + imagem de fundo */}
-
+      <View style={styles.imagem}>
       <ImageBackground source={require('../assets/images/imgFundo.png')} 
       style={styles.imgFundo}>
       
@@ -16,6 +16,7 @@ export default function Index() {
 
       </Image>
       </ImageBackground>
+      </View>
       {/* 2. Campo de consulta */}
       <ScrollView style={styles.containerScroll}>
       <View style={styles.container}>
@@ -70,6 +71,10 @@ const styles = StyleSheet.create({
 
   titulo:{
     fontSize: 25
+  },
+
+  imagem: {
+    height: '40%'
   }
 
 
