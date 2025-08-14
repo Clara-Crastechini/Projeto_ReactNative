@@ -1,37 +1,37 @@
 import { ScrollView, StyleSheet, Text, View } from "react-native"
 
-export const Card = () => {
+export const Card = ({cep, logradouro, bairro, uf, estado, regiao}) => {
     return (
         <View style={styles.card}>
 
             <View>
                 <Text style={styles.titulo}>CEP: </Text>
-                <Text style={styles.valor}>Dado 1:</Text>
+                <Text style={styles.valor}>{cep}</Text>
             </View>
 
             <View>
                 <Text style={styles.titulo}>Logradouro: </Text>
-                <Text style={styles.valor}>Dado 2:</Text>
+                <Text style={styles.valor}>{logradouro}</Text>
             </View>
 
             <View>
                 <Text style={styles.titulo}>Bairro: </Text>
-                <Text style={styles.valor}>Dado 3:</Text>
+                <Text style={styles.valor}>{bairro}</Text>
             </View>
 
             <View>
                 <Text style={styles.titulo}>UF: </Text>
-                <Text style={styles.valor}>Dado 4:</Text>
+                <Text style={styles.valor}>{uf}</Text>
             </View>
 
             <View>
                 <Text style={styles.titulo}>Estado: </Text>
-                <Text style={styles.valor}>Dado 5:</Text>
+                <Text style={styles.valor}>{estado}</Text>
             </View>
 
             <View>
                 <Text style={styles.titulo}>Região: </Text>
-                <Text style={styles.valor}>Dado 6:</Text>
+                <Text style={styles.valor}>{regiao}</Text>
             </View>
 
 
@@ -59,10 +59,11 @@ const styles = StyleSheet.create({
     },
 
     titulo: {
-        fontWeight: 600
+        fontWeight: 600,
+        fontFamily: "Poppins-Bold"
     },
 
     valor: {
-
+        fontFamily: "Poppins-Regular"
     }
 })
