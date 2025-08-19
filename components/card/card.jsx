@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 export const Card = ({cep, logradouro, bairro, uf, estado, regiao}) => {
     return (
@@ -43,7 +43,7 @@ export const Card = ({cep, logradouro, bairro, uf, estado, regiao}) => {
 
 const styles = StyleSheet.create({
     card: {
-        // backgroundColor: "#eeeeeeff",
+    
         width: '70%',
         padding: 20,
         minHeight: '40%',
